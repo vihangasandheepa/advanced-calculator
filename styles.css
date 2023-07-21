@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    #000080,
+    #1e88e5
+  ); /* Gradient background with dark blue and lighter blue */
+  font-family: Arial, sans-serif;
+  color: #fff; /* Text color for the calculator */
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: 480px;
+  background-color: #1e88e5; /* Blue background color */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+input {
+  font-size: 28px;
+  text-align: right;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1e88e5; /* Blue for the input field */
+  color: #fff; /* Text color for the input field */
+}
+
+.answer-bar {
+  font-size: 28px;
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #0d47a1; /* Darker blue for the answer bar */
+  color: #fff; /* Text color for the answer bar */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Highlight effect */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  font-size: 24px;
+  padding: 15px;
+  background-color: #0d47a1; /* Slightly darker blue button color */
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s;
+}
+
+button.number {
+  background-color: #002171; /* Darker blue for number buttons */
+}
+
+button.number:hover {
+  background-color: #1976d2; /* Lighter blue on hover for number buttons */
+}
+
+button.operator {
+  background-color: #0d47a1; /* Slightly darker blue for operator buttons */
+  color: #fff; /* Text color for operator buttons */
+}
+
+button.operator:hover {
+  background-color: #64b5f6; /* Lighter blue on hover for operator buttons */
+}
+
+button.memory {
+  background-color: #0d47a1; /* Slightly darker blue for memory buttons */
+}
+
+button.memory:hover {
+  background-color: #002171; /* Darker blue on hover for memory buttons */
+}
+
+/* Lighter effect for buttons when clicked */
+button:active {
+  background-color: #002171; /* Darker blue when button is clicked */
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
